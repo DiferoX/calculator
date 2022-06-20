@@ -1,28 +1,31 @@
+let firstNum = 0;
+let secondNum = 0;
+let simbol = "";
+let total = 0;
+
+
+
 function sum(num1, num2)
 {
-  result = num1 + num2;
-  return result;
+  return (num1 + num2);
 }
 
 function rest(num1, num2)
 {
-  result = num1 - num2;
-  return result;
+  return (num1 - num2);
 }
 
 function multiply(num1, num2)
 {
-  result = num1 * num2;
-  return result;
+  return (num1 * num2);
 }
 
 function divide(num1, num2)
 {
-  result = num1 / num2;
-  return result;
+  return (num1 / num2);
 }
 
-function operate(simb, num1, num2)
+function operate(num1, num2, simb)
 {
   switch(simb)
   {
@@ -40,30 +43,28 @@ function operate(simb, num1, num2)
   }
 }
 
-console.log(operate ("+", 5, 15));
-console.log(operate ("-", 5, 15));
-console.log(operate ("*", 5, 15));
-console.log(operate ("/", 5, 15));
-
-
-
-/*
-let var1 = [];
-let i = 0;
-
-let b1 = document.getElementById('b1');
-b1.addEventListener('click', function()
+function prueba (n1, s)
 {
-  var1[0] = 1;
-  let joinArr = var1.join("");
-  document.querySelector('.mainTxt').innerHTML = joinArr;
-  i++;
-});
+  firstNum = Number(n1);
+  simbol = s;
+  document.calculator.show.value = firstNum + " " + simbol;
+  document.calculator.answ.value = "";
+}
 
-let b2 = document.getElementById('b2');
-b2.addEventListener('click', function()
+function equal(n2)
 {
-  var1 = "2";
-  document.querySelector('.mainTxt').innerHTML = var1;
-});
-*/
+  secondNum = Number(n2);
+  total = operate(firstNum, secondNum, simbol);
+  document.calculator.answ.value = total;
+  document.calculator.show.value = firstNum + " " + simbol + " " + secondNum + " = ";
+}
+
+function reset()
+{
+  firstNum = 0;
+  secondNum = 0;
+  simbol = "";
+  total = 0;
+  document.calculator.answ.value = "";
+  document.calculator.show.value = "";
+}

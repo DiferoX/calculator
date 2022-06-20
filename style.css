@@ -22,3 +22,36 @@ body
   align-items: center;
   
 }
+
+.btn
+{
+  height: 50px;
+  width: 50px;
+  border-radius: 25%;
+  margin: 2px 1px;
+}
+
+#show, #answ
+{
+  width: 210px;
+  text-align: end;
+  padding: 4px;
+  border: 0px;
+}
+
+#show
+{
+  font-size: 15px;
+}
+
+#answ
+{
+  font-size: 25px;
+}
+
+.display
+{
+  border: 2px solid black;
+  margin-bottom: 5px;
+  justify-content: center;
+}
