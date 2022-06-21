@@ -56,7 +56,7 @@ function equal(n2)
   secondNum = Number(n2);
   total = operate(firstNum, secondNum, simbol);
   document.calculator.answ.value = total;
-  document.calculator.show.value = firstNum + " " + simbol + " " + secondNum + " = ";
+  document.calculator.show.value = firstNum + " " + simbol + " " + secondNum + " = "; 
 }
 
 function reset()
