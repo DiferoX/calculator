@@ -10,48 +10,68 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(5, 4, 37);
 }
 
 .mainContent
 {
+  margin-top: 100px;
   height: 600px;
   width: 400px;
-  border: 2px solid black;
+  border: 2px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  border-radius: 25px;
+  background-image: linear-gradient(to top left, black, indigo, indigo, rgb(188, 183, 207), indigo, indigo, black);
+  box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.5)
 }
 
 .btn
 {
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
   border-radius: 25%;
-  margin: 2px 1px;
+  margin: 1px 1px;
+  border-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#eqBtn
+{
+  background-image: linear-gradient(to top left, orange, orange, white, orange, orange);
+  border-radius: 50%;
+}
+
+#show
+{
+  border-top-left-radius: 25px;
+  font-size: 30px;
+}
+
+#answ
+{
+  border-bottom-left-radius: 25px;
+  font-size: 50px;
 }
 
 #show, #answ
 {
-  width: 210px;
+  background-color: rgba(255, 255, 255, 0);
+  width: 320px;
   text-align: end;
   padding: 4px;
   border: 0px;
 }
 
-#show
-{
-  font-size: 15px;
-}
-
-#answ
-{
-  font-size: 25px;
-}
-
 .display
 {
-  border: 2px solid black;
+  height: 120px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.5);
   margin-bottom: 5px;
   justify-content: center;
+  border-radius: 25px;
 }
