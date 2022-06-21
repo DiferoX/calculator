@@ -10,6 +10,7 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
+  /*background-image: linear-gradient(to left, rgb(188, 183, 207), black, indigo, indigo, indigo, indigo, black, rgb(188, 183, 207));*/
   background-color: rgb(5, 4, 37);
 }
 
@@ -27,7 +28,7 @@ body
   box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.5)
 }
 
-.btn
+.btnNum, .btnSimb, .btnRst, .btn
 {
   height: 80px;
   width: 80px;
@@ -39,9 +40,39 @@ body
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-#eqBtn
+.btnNum
+{
+  background-color: rgba(172, 255, 47, 0.1);
+}
+
+.btnNum:hover
+{
+  background-image: linear-gradient(to top left, greenyellow, greenyellow, white, greenyellow, greenyellow);
+}
+
+.btnSimb
+{
+  background-color: rgba(255, 166, 0, 0.1);
+}
+
+.btnSimb:hover
 {
   background-image: linear-gradient(to top left, orange, orange, white, orange, orange);
+}
+
+.btnRst
+{
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.btnRst:hover
+{
+  background-image: linear-gradient(to top left, red, red, white, red, red);
+}
+
+#eqBtn
+{
+  background-color: rgba(255, 166, 0, 0.5);
   border-radius: 50%;
 }
 
@@ -71,7 +102,7 @@ body
   height: 120px;
   border: 2px solid rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   justify-content: center;
   border-radius: 25px;
 }

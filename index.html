@@ -16,30 +16,30 @@
           <br>
         </div>
         
-        <input type="button" class="btn" value="AC" onclick="reset()">
-        <input type="button" class="btn" value="C" onclick="document.calculator.answ.value = ''">
-        <input type="button" class="btn" value="/" onclick="firstValue(document.calculator.answ.value, '/')">
-        <input type="button" class="btn" value="*" onclick="firstValue(document.calculator.answ.value, '*')">
+        <input type="button" class="btnRst" value="AC" onclick="reset()">
+        <input type="button" class="btnRst" value="C" onclick="document.calculator.answ.value = ''">
+        <input type="button" class="btnSimb" value="%">
+        <input type="button" class="btnSimb" value="/" onclick="firstValue(document.calculator.answ.value, '/')">
         <br>
-        <input type="button" class="btn" value="7" onclick="document.calculator.answ.value += '7'">
-        <input type="button" class="btn" value="8" onclick="document.calculator.answ.value += '8'">
-        <input type="button" class="btn" value="9" onclick="document.calculator.answ.value += '9'">
-        <input type="button" class="btn" value="-" onclick="firstValue(document.calculator.answ.value, '-')">
+        <input type="button" class="btnNum" value="7" onclick="document.calculator.answ.value += '7'">
+        <input type="button" class="btnNum" value="8" onclick="document.calculator.answ.value += '8'">
+        <input type="button" class="btnNum" value="9" onclick="document.calculator.answ.value += '9'">
+        <input type="button" class="btnSimb" value="*" onclick="firstValue(document.calculator.answ.value, '*')">
         <br>
-        <input type="button" class="btn" value="4" onclick="document.calculator.answ.value += '4'">
-        <input type="button" class="btn" value="5" onclick="document.calculator.answ.value += '5'">
-        <input type="button" class="btn" value="6" onclick="document.calculator.answ.value += '6'">
-        <input type="button" class="btn" value="+" onclick="firstValue(document.calculator.answ.value, '+')">
+        <input type="button" class="btnNum" value="4" onclick="document.calculator.answ.value += '4'">
+        <input type="button" class="btnNum" value="5" onclick="document.calculator.answ.value += '5'">
+        <input type="button" class="btnNum" value="6" onclick="document.calculator.answ.value += '6'">
+        <input type="button" class="btnSimb" value="-" onclick="firstValue(document.calculator.answ.value, '-')">
         <br>
-        <input type="button" class="btn" value="1" onclick="document.calculator.answ.value += '1'">
-        <input type="button" class="btn" value="2" onclick="document.calculator.answ.value += '2'">
-        <input type="button" class="btn" value="3" onclick="document.calculator.answ.value += '3'">
-        <input type="button" class="btn" id="addBtn" value="+" onclick="firstValue(document.calculator.answ.value, '+')">
+        <input type="button" class="btnNum" value="1" onclick="document.calculator.answ.value += '1'">
+        <input type="button" class="btnNum" value="2" onclick="document.calculator.answ.value += '2'">
+        <input type="button" class="btnNum" value="3" onclick="document.calculator.answ.value += '3'">
+        <input type="button" class="btnSimb" id="addBtn" value="+" onclick="firstValue(document.calculator.answ.value, '+')">
         <br>
-        <input type="button" class="btn" value="0" onclick="document.calculator.answ.value += '0'">
-        <input type="button" class="btn" value="00" onclick="document.calculator.answ.value += '00'">
-        <input type="button" class="btn" value="." onclick="document.calculator.answ.value += '.'">
-        <input type="button" class="btn" id="eqBtn" value="=" onclick="equal(document.calculator.answ.value)">
+        <input type="button" class="btnNum" value="0" onclick="document.calculator.answ.value += '0'">
+        <input type="button" class="btnNum" value="00" onclick="document.calculator.answ.value += '00'">
+        <input type="button" class="btnSimb" value="." onclick="document.calculator.answ.value += '.'">
+        <input type="button" class="btnSimb" id="eqBtn" value="=" onclick="equal(document.calculator.answ.value)">
 
 
       </form>
